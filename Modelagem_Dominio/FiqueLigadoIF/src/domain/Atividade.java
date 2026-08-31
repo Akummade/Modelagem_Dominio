@@ -18,6 +18,19 @@ public class Atividade {
     private List<Inscricao> inscritos;
 
     private List<AtividadeMinistrante> ministrantes;
+
+
+    public Atividade(Integer id, String titulo, LocalDateTime dataHoraInicio, LocalDateTime dataHoraFim,
+            Double cargaHoraria, Integer quantidadeVagas, Evento evento, Local local) {
+        this.id = id;
+        this.titulo = titulo;
+        this.dataHoraInicio = dataHoraInicio;
+        this.dataHoraFim = dataHoraFim;
+        this.cargaHoraria = cargaHoraria;
+        this.quantidadeVagas = quantidadeVagas;
+        this.evento = evento;
+        this.local = local;
+    } 
     
     public Integer getId() {
         return id;
@@ -67,17 +80,7 @@ public class Atividade {
     public void setLocal(Local local) {
         this.local = local;
     }
-    public Atividade(Integer id, String titulo, LocalDateTime dataHoraInicio, LocalDateTime dataHoraFim,
-            Double cargaHoraria, Integer quantidadeVagas, Evento evento, Local local) {
-        this.id = id;
-        this.titulo = titulo;
-        this.dataHoraInicio = dataHoraInicio;
-        this.dataHoraFim = dataHoraFim;
-        this.cargaHoraria = cargaHoraria;
-        this.quantidadeVagas = quantidadeVagas;
-        this.evento = evento;
-        this.local = local;
-    } 
+    
 
     @Override
     public String toString() {
